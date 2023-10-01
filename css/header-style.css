@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+header {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-burger-menu {
+  width: 40px;
+  height: 40px;
+  left: 0%;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+.header-burger-menu:hover {
+  background-color: var(--primary-darker);
+}
+
+.header-title {
+  margin: auto;
+  padding: 0;
+  line-height: 10px;
+  text-decoration: none;
+  color: var(--light);
+  display: flex;
+}

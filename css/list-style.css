@@ -2,6 +2,7 @@
 
 :root {
   --primary: #4194e2;
+  --primary-darker: #2a6db0;
   --secondary: #ee5011;
   --dark: #000000;
   --light: #ffffff;
@@ -28,7 +29,19 @@ header {
   color: var(--light);
   padding: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.header-burger-menu {
+  width: 40px;
+  height: 40px;
+  left: 0%;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+.header-burger-menu:hover {
+  background-color: var(--primary-darker);
 }
 
 section {
