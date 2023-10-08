@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -23,11 +23,10 @@
     <h2 class="header-title">App Name</h2>
   </header>
 
-  <div class="side-panel" :class="{ 'open': sidePanelOpened }">
-    <img src="/icons/x-lg.svg" class="side-panel-close-button" @click="console.log("Close side pannel trigered")">
-    <ul>
+  <div class="side-panel open">
+    <img src="assets/icons/header/x-lg.svg" class="side-panel-close-button" @click="console.log(" Close side pannel trigered")">
+    <ul class="side-panel-list">
       <li class="side-panel-item">
-        <img class="side-panel-item-icon" src="`/icons/menu/XXXXXXXXX`">
         <span class="side-panel-item-name">Lorem ispsum</span>
       </li>
     </ul>
