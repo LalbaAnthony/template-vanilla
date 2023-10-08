@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/header-style.css">
   <link rel="stylesheet" href="css/item-list-style.css">
-  <script src="js/scripts.js" defer></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/header.js" async></script>
 </head>
 
 <body>
@@ -23,11 +25,14 @@
     <h2 class="header-title">App Name</h2>
   </header>
 
-  <div class="side-panel open">
-    <img src="assets/icons/header/x-lg.svg" class="side-panel-close-button" @click="console.log(" Close side pannel trigered")">
+  <div class="side-panel" id="side-panel">
+    <img src="assets/icons/header/x-lg.svg" class="side-panel-close-button" @click="">
     <ul class="side-panel-list">
       <li class="side-panel-item">
-        <span class="side-panel-item-name">Lorem ispsum</span>
+        <a href="index.html" class="side-panel-item-name">Lorem ispsum</a>
+      </li>
+      <li class="side-panel-item">
+        <a href="index.html" class="side-panel-item-name">Lorem ispsum</a>
       </li>
     </ul>
   </div>
