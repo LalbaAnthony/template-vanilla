@@ -5,13 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Page</title>
+  <meta name="author" content="Anthony Lalba" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/header-style.css">
-  <link rel="stylesheet" href="css/list-style.css">
+  <link rel="stylesheet" href="css/item-list-style.css">
   <script src="js/scripts.js" defer></script>
 </head>
-
 
 <body>
   <noscript>
@@ -23,6 +23,16 @@
     <h2 class="header-title">App Name</h2>
   </header>
 
+  <div class="side-panel" :class="{ 'open': sidePanelOpened }">
+    <img src="/icons/x-lg.svg" class="side-panel-close-button" @click="console.log("Close side pannel trigered")">
+    <ul>
+      <li class="side-panel-item">
+        <img class="side-panel-item-icon" src="`/icons/menu/XXXXXXXXX`">
+        <span class="side-panel-item-name">Lorem ispsum</span>
+      </li>
+    </ul>
+  </div>
+
   <main>
     <section>
       <h2>Lorem ispsum</h2>
@@ -30,12 +40,12 @@
     </section>
 
     <section>
-      <ul>
+      <ul class="main-list">
         <li>
-          <div class="item">>Hey</div>
+          <div class="item">Hey</div>
         </li>
         <li>
-          <div class="item">>Ho</div>
+          <div class="item">Ho</div>
         </li>
         <li>
           <div class="item">AhhhHAhaHaHhaHAhaA</div>
