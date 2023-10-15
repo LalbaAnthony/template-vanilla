@@ -1,13 +1,11 @@
 @charset "UTF-8";
 
 .toolbar {
-  background-color: var(--light);
-  padding: 0.5rem;
   display: flex;
   align-items: center;
 }
 
-.toolbar > * {
+.toolbar>* {
   margin: 0 5px 0 5px;
 }
 
@@ -36,4 +34,35 @@
   color: var(--light);
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.pills-list {
+  padding: 0.5rem;
+  display: flex;
+  align-items: left;
+}
+
+.pills-list>* {
+  margin: 0 5px 0 5px;
+}
+
+.pill {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.pill.chocolate {
+  background-color: chocolate;
+}
+
+.pill.teal {
+  background-color: teal;
+}
+
+.pill.brown {
+  background-color: brown;
 }
