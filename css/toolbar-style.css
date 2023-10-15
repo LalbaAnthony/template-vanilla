@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.toolbar {
+  background-color: var(--light);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar > * {
+  margin-right: 0.5rem;
+}
+
+.toolbar-filter-button {
+  cursor: pointer;
+}
+
+.toolbar-search {
+  width: 100%;
+  height: 30px;
+  border-radius: 25px;
+  border: gray 1px solid;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-search-button {
+  background-color: var(--primary);
+  padding: 5px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}

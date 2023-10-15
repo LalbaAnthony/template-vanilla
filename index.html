@@ -9,8 +9,9 @@
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/header-style.css">
+  <link rel="stylesheet" href="css/toolbar-style.css">
   <link rel="stylesheet" href="css/item-list-style.css">
-  <script src="js/scripts.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/helpers.js"></script>
   <script src="js/header.js" async></script>
 </head>
@@ -21,14 +22,16 @@
   </noscript>
 
   <header class="header">
-    <img src="assets/icons/header/burger.svg" class="header-burger-menu">
-    <h2 class="header-title">App Name</h2>
-  </header>
+    <img src="assets/icons/header/burger.svg" class="header-burger-menu" alt="Header burger menu button"
+      onclick="toggleSidePanel()">
+      <h2 class="header-title">App Name</h2>
+    </header>
 
-  <div class="side-panel" id="side-panel">
-    <img src="assets/icons/header/x-lg.svg" class="side-panel-close-button" @click="">
-    <ul class="side-panel-list">
-      <li class="side-panel-item">
+    <div class="side-panel" id="side-panel">
+      <img src="assets/icons/header/x-lg.svg" class="side-panel-close-button" alt="Close side pannel button"
+      onclick="closeSidePanel()">
+      <ul class="side-panel-list">
+        <li class="side-panel-item">
         <a href="index.html" class="side-panel-item-name">Lorem ispsum</a>
       </li>
       <li class="side-panel-item">
@@ -36,23 +39,30 @@
       </li>
     </ul>
   </div>
-
+  
   <main>
     <section>
-      <h2>Lorem ispsum</h2>
-      <p>Here is the start of a <span style="font-weight: bold; color: var(--primary);">beautiful</span> project.</p>
+      <div class="toolbar">
+        <div class="toolbar-filter-button">
+          <img src="assets/icons/toolbar/filter-left.svg" alt="Filter button">
+        </div>
+        <input class="toolbar-search" name="search" type="search" placeholder="Rechercher" value="" />
+        <div class="toolbar-search-button">
+          <img src="assets/icons/toolbar/search.svg" alt="Search button">
+        </div>
+      </div>
     </section>
 
     <section>
       <ul class="main-list">
         <li>
-          <div class="item">Hey</div>
+          <div class="item">Item 1</div>
         </li>
         <li>
-          <div class="item">Ho</div>
+          <div class="item">Item 2</div>
         </li>
         <li>
-          <div class="item">AhhhHAhaHaHhaHAhaA</div>
+          <div class="item">Item 3</div>
         </li>
       </ul>
       </list>

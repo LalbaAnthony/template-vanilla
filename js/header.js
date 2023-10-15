@@ -1,6 +1,11 @@
 function toggleSidePanel() {
-    const sidePanel = document.getElementById("sidePanel");
-    // Si check si a la class 'open' 
-    // => si non lui ajouter
-    // => si oui lui retirer
+    const sidePanel = document.getElementById("side-panel");
+    const isOpen = sidePanel.classList.contains(open) ? true : false;
+    if (isOpen) sidePanel.classList.remove("open");
+    else sidePanel.classList.add("open");
+}
+
+function closeSidePanel() {
+    const sidePanel = document.getElementById("side-panel");
+    sidePanel.classList.remove("open");
 }
