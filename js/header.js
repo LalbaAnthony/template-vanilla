@@ -1,8 +1,12 @@
 function toggleSidePanel() {
     const sidePanel = document.getElementById("side-panel");
-    const isOpen = sidePanel.classList.contains(open) ? true : false;
-    if (isOpen) sidePanel.classList.remove("open");
+    if (sidePanel.classList.contains(open)) sidePanel.classList.remove("open");
     else sidePanel.classList.add("open");
+}
+
+function openSidePanel() {
+    const sidePanel = document.getElementById("side-panel");
+    sidePanel.classList.add("open");
 }
 
 function closeSidePanel() {

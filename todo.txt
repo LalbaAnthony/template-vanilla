@@ -1,0 +1,5 @@
+TODO:
+- [ ] Center AppName on header
+- [ ] Dropdown menu on filter
+- [ ] Improve item (with pills)
+- [ ] Add categories pills 

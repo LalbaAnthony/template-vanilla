@@ -8,7 +8,7 @@
 }
 
 .toolbar > * {
-  margin-right: 0.5rem;
+  margin: 0 5px 0 5px;
 }
 
 .toolbar-filter-button {
@@ -27,7 +27,13 @@
 
 .toolbar-search-button {
   background-color: var(--primary);
-  padding: 5px 6px;
-  border-radius: 50%;
+  padding: 5px;
+  border-radius: 25px;
   cursor: pointer;
+}
+
+.toolbar-search-button-label {
+  color: var(--light);
+  font-size: 0.8rem;
+  font-weight: bold;
 }
