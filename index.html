@@ -14,6 +14,7 @@
   <script src="js/script.js"></script>
   <script src="js/helpers.js"></script>
   <script src="js/header.js" async></script>
+  <script src="js/toolbar.js" async></script>
 </head>
 
 <body>
@@ -48,7 +49,13 @@
       <div class="toolbar">
         <div class="search">
           <div class="search-filter-button">
-            <img src="assets/icons/toolbar/filter-left.svg" alt="Filter button">
+            <img src="assets/icons/toolbar/filter-left.svg" alt="Filter button" onclick="toggleFilters()">
+            <div class="search-filter-dropdown" id="search-filter-dropdown">
+              <ul class="search-filter-dropdown-list">
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+              </ul>
+            </div>
           </div>
           <input class="search-input" name="search" type="search" placeholder="Rechercher" value="" />
           <div class="search-button">

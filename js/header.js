@@ -1,6 +1,6 @@
 function toggleSidePanel() {
     const sidePanel = document.getElementById("side-panel");
-    if (sidePanel.classList.contains(open)) sidePanel.classList.remove("open");
+    if (sidePanel.classList.contains("open")) sidePanel.classList.remove("open");
     else sidePanel.classList.add("open");
 }
 

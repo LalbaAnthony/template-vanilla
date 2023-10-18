@@ -14,13 +14,14 @@
   .main-list {
     display: block;
   }
+
   .item {
     margin-bottom: 20px;
   }
 }
 
 .main-list {
-  list-style-type: none;
+  /* ... */
 }
 
 .item {

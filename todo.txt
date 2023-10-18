@@ -1,5 +1,5 @@
 TODO:
 - [ ] Center AppName on header
 - [ ] Dropdown menu on filter
-- [ ] Improve item (with pills)
+- [ ] Improve item (with pills, title, subtitle, img(?), etc)
 - [ ] Add categories pills 
