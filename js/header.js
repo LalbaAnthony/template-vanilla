@@ -1,3 +1,9 @@
+const burgerBtn = document.getElementById("header-burger-menu");
+burgerBtn.addEventListener("click", toggleSidePanel);
+
+const closePanelBtn = document.getElementById("side-panel-close-button");
+closePanelBtn.addEventListener("click", closeSidePanel);
+
 function toggleSidePanel() {
     const sidePanel = document.getElementById("side-panel");
     if (sidePanel.classList.contains("open")) sidePanel.classList.remove("open");

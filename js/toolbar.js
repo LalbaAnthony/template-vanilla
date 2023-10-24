@@ -1,3 +1,6 @@
+const fitlerBtn = document.getElementById("filter-button");
+fitlerBtn.addEventListener("click", toggleFilters);
+
 function toggleFilters() {
     const filterDropdown = document.getElementById("search-filter-dropdown");
     if (filterDropdown.classList.contains("open")) {

@@ -1,5 +1,7 @@
 TODO:
 - [X] Add categories pills 
 - [X] Dropdown menu on filter
+- [X] Remplacer les onclick par des addEnventListener
+- [ ] Faire header desktop sans burger
 - [ ] Center AppName on header
 - [ ] Improve item (with pills, title, subtitle, img(?), etc)
