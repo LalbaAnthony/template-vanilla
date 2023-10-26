@@ -87,15 +87,6 @@
   margin: 0 5px 0 5px;
 }
 
-.pill {
-  background-color: var(--primary);
-  color: var(--light);
-  padding: 3px 10px;
-  font-size: 12px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
 .pill.chocolate {
   background-color: chocolate;
 }
