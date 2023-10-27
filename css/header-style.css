@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+main {
+  filter: blur(0px);
+}
+
 header {
   background-color: var(--primary);
   color: var(--light);
