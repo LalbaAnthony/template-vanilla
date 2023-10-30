@@ -5,4 +5,5 @@ TODO:
 - [ ] Griser le reste de l'app quand side panel
 - [ ] Faire header desktop sans burger
 - [ ] Center AppName on header
+- [ ] Create dialog popup
 - [ ] Improve item (with pills, title, subtitle, img(?), etc)
