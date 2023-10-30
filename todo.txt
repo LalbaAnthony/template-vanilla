@@ -2,8 +2,12 @@ TODO:
 - [X] Add categories pills 
 - [X] Dropdown menu on filter
 - [X] Remplacer les onclick par des addEnventListener
-- [ ] Griser le reste de l'app quand side panel
-- [ ] Faire header desktop sans burger
+- [X] Blur le reste de l'app quand side panel
+- [ ] Créer des notifs
+        - [ ] Gerer les conflits side panel / notifs
+        - [ ] Ajouter un croix pour pouvoir les fermer
+        - [ ] Ajouter le fait de pouvoir slide les notifications
+        - [ ] Gérer plusieurs notifs à la fois
 - [ ] Center AppName on header
 - [ ] Create dialog popup
 - [ ] Improve item (with pills, title, subtitle, img(?), etc)

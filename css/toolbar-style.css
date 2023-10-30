@@ -33,10 +33,6 @@
 	animation-duration: 0.2s;
 }
 
-.search-filter-button:hover .search-filter-dropdown {
-  display: block;
-}
-
 .search-filter-dropdown.open {
   display: block;
 }
