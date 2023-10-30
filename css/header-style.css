@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 main {
-  filter: blur(0px);
+  /* ... */
+}
+
+main.blur {
+  filter: blur(2px);
 }
 
 header {

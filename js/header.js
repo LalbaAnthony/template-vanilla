@@ -6,16 +6,27 @@ closePanelBtn.addEventListener("click", closeSidePanel);
 
 function toggleSidePanel() {
     const sidePanel = document.getElementById("side-panel");
-    if (sidePanel.classList.contains("open")) sidePanel.classList.remove("open");
-    else sidePanel.classList.add("open");
+    const mainPage = document.getElementById("main");
+    if (sidePanel.classList.contains("open")) {
+        sidePanel.classList.remove("open");
+        mainPage.classList.remove("blur");
+    }
+    else {
+        sidePanel.classList.add("open");
+        mainPage.classList.add("blur");
+    }
 }
 
 function openSidePanel() {
     const sidePanel = document.getElementById("side-panel");
+    const mainPage = document.getElementById("main");
     sidePanel.classList.add("open");
+    mainPage.classList.add("blur");
 }
 
 function closeSidePanel() {
     const sidePanel = document.getElementById("side-panel");
+    const mainPage = document.getElementById("main");
     sidePanel.classList.remove("open");
+    mainPage.classList.remove("blur");
 }
