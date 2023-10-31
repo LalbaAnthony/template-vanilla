@@ -12,6 +12,25 @@ function createNotifEl() {
     notification.style.boxShadow = '2px 2px 2px rgba(0, 0, 0, 0.2)';
     notification.style.transition = 'opacity 0.5s';
     notification.style.display = 'none';
+
+    // // Ajoute un bouton "X" pour fermer la notification
+    // const closeButton = document.createElement('span');
+    // closeButton.textContent = 'X';
+    // closeButton.style.cursor = 'pointer';
+    // closeButton.style.position = 'absolute';
+    // closeButton.style.top = '5px';
+    // closeButton.style.right = '5px';
+    // closeButton.style.color = 'var(--light)';
+    // closeButton.addEventListener('click', function () {
+    //     notification.style.opacity = 0;
+    //     setTimeout(function () {
+    //         notification.style.display = 'none';
+    //         notification.remove();
+    //     }, 500);
+    // });
+
+    // notification.appendChild(closeButton);
+
     return notification;
 }
 

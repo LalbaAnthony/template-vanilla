@@ -2,7 +2,8 @@ TODO:
 - [X] Add categories pills 
 - [X] Dropdown menu on filter
 - [X] Remplacer les onclick par des addEnventListener
-- [X] Blur le reste de l'app quand side panel
+- [ ] Blur le reste de l'app quand side panel
+    - [ ] Fixer le pb du flou blanc autour du header
 - [ ] Créer des notifs
         - [ ] Gerer les conflits side panel / notifs
         - [ ] Ajouter un croix pour pouvoir les fermer
