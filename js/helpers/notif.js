@@ -8,8 +8,8 @@ function notify(content, type = 'success', autoclose = true) {
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 1000;
-        max-width: 150px;
+        z-index: 14;
+        max-width: 200px;
         padding: 10px;
         flex: 1;
         border-radius: 0.5rem;
@@ -25,7 +25,7 @@ function notify(content, type = 'success', autoclose = true) {
 
     // Close button
     const closeButton = document.createElement('div');
-    closeButton.textContent = 'X';
+    closeButton.innerHTML = '&#215;';
     closeButton.style.cssText = `
         cursor: pointer;
         margin-left: 10px;
@@ -60,4 +60,8 @@ function notify(content, type = 'success', autoclose = true) {
 
 document.addEventListener('DOMContentLoaded', function () {
     notify("Hello world !", "success", false);
+    // setTimeout(function () {
+    //     notify("Hello world ! 2", "success", false);
+    // }, 500);
 });
+
