@@ -1,3 +1,9 @@
+const NOTIFICATION_CONFIG = {
+    maxWidth: '200px',
+    zIndex: 14,
+    duration: 3000,
+};
+
 function notify(content, type = 'success', autoclose = true) {
 
     // Container
@@ -8,8 +14,8 @@ function notify(content, type = 'success', autoclose = true) {
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 14;
-        max-width: 200px;
+        max-width: ${NOTIFICATION_CONFIG.maxWidth};
+        z-index: ${NOTIFICATION_CONFIG.zIndex};
         padding: 10px;
         flex: 1;
         border-radius: 0.5rem;
@@ -54,14 +60,14 @@ function notify(content, type = 'success', autoclose = true) {
                 notification.style.display = 'none';
                 notification.remove();
             }, 500);
-        }, 3000);
+        }, NOTIFICATION_CONFIG.duration);
     }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    notify("Hello world !", "success", false);
+    notify("Hello world !", "success", true);
     // setTimeout(function () {
-    //     notify("Hello world ! 2", "success", false);
+    //     notify("Hello world ! 2", "success", true);
     // }, 500);
 });
 
