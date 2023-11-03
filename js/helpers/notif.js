@@ -1,6 +1,7 @@
 const NOTIFICATION_CONFIG = {
     containerZIndex: 14,
     duration: 3000,
+    possibleType: ['success', 'warning', 'danger', 'info'],
     color: {
         success: 'var(--bs-success)',
         warning: 'var(--bs-warning)',
@@ -11,8 +12,7 @@ const NOTIFICATION_CONFIG = {
 
 function notify(content, type = 'success', autoclose = true) {
     
-    const possibleType = ['success', 'warning', 'danger', 'info'];
-    if (possibleType.includes(type) == false) {
+    if (NOTIFICATION_CONFIG.possibleType.includes(type) == false) {
         console.error(`Invalid notification type: ${type}`);
         return;
     }
