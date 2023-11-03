@@ -5,7 +5,7 @@ const NOTIFICATION_CONFIG = {
         success: 'var(--bs-success)',
         warning: 'var(--bs-warning)',
         danger: 'var(--bs-danger)',
-        primary: 'var(--primary)',
+        info: 'var(--secondary)',
     }
 };
 
