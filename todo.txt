@@ -4,6 +4,7 @@ TODO:
 - [X] Remplacer les onclick par des addEnventListener
 - [ ] Blur le reste de l'app quand side panel
     - [ ] Fixer le pb du flou blanc autour du header
+- [ ] Message si pas d'items (+ fill les items den dynamique (?))
 - [ ] Créer des notifs
         - [ ] Reword tout le code en fragmentant en plein de fonctions 
         - [ ] Rajouter la blinde de fonctions pour interagir avec les notifs (clear all, ...)  
