@@ -110,5 +110,8 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     notify("Hello world !", "success", false);
+    setTimeout(() => {
+      clearNotifications();
+    }, 5000);
   });
 </script>

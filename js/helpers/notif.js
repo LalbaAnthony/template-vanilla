@@ -10,8 +10,10 @@ const NOTIFICATION_CONFIG = {
     }
 };
 
+let lastID = 1;
+
 function notify(content, type = 'success', autoclose = true) {
-    
+
     if (NOTIFICATION_CONFIG.possibleType.includes(type) == false) {
         console.error(`Invalid notification type: ${type}`);
         return;
@@ -19,7 +21,7 @@ function notify(content, type = 'success', autoclose = true) {
 
     // Container
     const notification = document.createElement('div');
-    notification.setAttribute('id', 'notification');
+    notification.setAttribute('id', 'notification-' + lastID++);
     notification.style.cssText = `
         opacity: 1;
         display: flex;
@@ -50,11 +52,7 @@ function notify(content, type = 'success', autoclose = true) {
         border-radius: 25px;
     `;
     notificationCloseButton.addEventListener('click', function () {
-        notification.style.opacity = 0;
-        setTimeout(function () {
-            notification.style.display = 'none';
-            notification.remove();
-        }, 500);
+        clearNotification(notification);
     });
 
     // Append
@@ -66,23 +64,24 @@ function notify(content, type = 'success', autoclose = true) {
 
     // Auto close
     if (autoclose) {
-        setTimeout(function () {
-            notification.style.opacity = 0;
-            setTimeout(function () {
-                notification.style.display = 'none';
-                notification.remove();
-            }, 500);
+        setTimeout(() => {
+            clearNotification(notification);
         }, NOTIFICATION_CONFIG.duration);
     }
 }
 
-// TODO: make that shit work
-// function clearAllNotifcation() {
-//     const notifications = document.querySelectorAll('.notification');
-//     notifications.forEach(function (notification) {
-//         notification.style.opacity = 0;
-//         notification.style.display = 'none';
-//         notification.remove();
-//     });
-// }
+function clearNotification(notification) {
+    console.log('clearing notification');
+    notification.style.opacity = 0;
+    setTimeout(() => {
+        notification.style.display = 'none';
+        notification.remove();
+    }, 500);
+}
+function clearNotifications() {
+    const notifications = document.querySelectorAll('[id^="notification-"]');
+    notifications.forEach(function (notification) {
+        clearNotification(notification);
+    });
+}
 
