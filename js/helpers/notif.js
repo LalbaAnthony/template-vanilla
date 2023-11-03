@@ -71,17 +71,16 @@ function notify(content, type = 'success', autoclose = true) {
 }
 
 function clearNotification(notification) {
-    console.log('clearing notification');
     notification.style.opacity = 0;
     setTimeout(() => {
         notification.style.display = 'none';
         notification.remove();
     }, 500);
 }
+
 function clearNotifications() {
     const notifications = document.querySelectorAll('[id^="notification-"]');
-    notifications.forEach(function (notification) {
+    notifications.forEach((notification) => {
         clearNotification(notification);
     });
 }
-

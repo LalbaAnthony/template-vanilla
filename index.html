@@ -64,13 +64,13 @@
           </div>
         </div>
         <div class="pills-list">
-          <div class="pill chocolate">
+          <div class="pill hover-effect chocolate">
             Pill 1
           </div>
-          <div class="pill chocolate">
+          <div class="pill hover-effect chocolate">
             Pill 2
           </div>
-          <div class="pill chocolate">
+          <div class="pill hover-effect chocolate">
             Pill 3
           </div>
         </div>
@@ -98,6 +98,9 @@
           <div class="item">Item 6</div>
         </li>
       </ul>
+      <!-- <div class="main-center">
+        <span class="message-no-items">No items.</span>
+      </div> -->
     </section>
   </main>
 
@@ -108,7 +111,7 @@
 </html>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', () => {
     notify("Hello world !", "success", false);
     setTimeout(() => {
       clearNotifications();

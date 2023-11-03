@@ -38,6 +38,11 @@ section {
   font-size: 12px;
   border-radius: 25px;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.pill.hover-effect:hover {
+  transform: scale(1.1);
 }
 
 .sr-only {

@@ -2,17 +2,19 @@ TODO:
 - [X] Add categories pills 
 - [X] Dropdown menu on filter
 - [X] Remplacer les onclick par des addEnventListener
+- [X] Message si pas d'items (+ fill les items den dynamique (?))
 - [ ] Blur le reste de l'app quand side panel
     - [ ] Fixer le pb du flou blanc autour du header
-- [ ] Message si pas d'items (+ fill les items den dynamique (?))
+- [ ] Improve filter
 - [ ] Créer des notifs
-        - [ ] Reword tout le code en fragmentant en plein de fonctions 
         - [ ] Rajouter la blinde de fonctions pour interagir avec les notifs (clear all, ...)  
         - [ ] Ajouter le fait de pouvoir slide les notifications
         - [ ] Gérer plusieurs notifs à la fois
         - [ ] Ajout d'une icon sur les notifs
+        - [X] Reword tout le code en fragmentant en plein de fonctions 
         - [X] Gerer les conflits side panel / notifs
         - [X] Ajouter un croix pour pouvoir les fermer
 - [ ] Center AppName on header
 - [ ] Create dialog popup
 - [ ] Improve item (with pills, title, subtitle, img(?), etc)
+      avec https://codepen.io/utilitybend/pen/bGvjLba
