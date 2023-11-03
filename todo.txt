@@ -5,11 +5,12 @@ TODO:
 - [ ] Blur le reste de l'app quand side panel
     - [ ] Fixer le pb du flou blanc autour du header
 - [ ] Créer des notifs
-        - [ ] Ajout d'une icon sur les notifs
         - [ ] Reword tout le code en fragmentant en plein de fonctions 
-        - [ ] Gerer les conflits side panel / notifs
+        - [ ] Rajouter la blinde de fonctions pour interagir avec les notifs (clear all, ...)  
         - [ ] Ajouter le fait de pouvoir slide les notifications
         - [ ] Gérer plusieurs notifs à la fois
+        - [ ] Ajout d'une icon sur les notifs
+        - [X] Gerer les conflits side panel / notifs
         - [X] Ajouter un croix pour pouvoir les fermer
 - [ ] Center AppName on header
 - [ ] Create dialog popup

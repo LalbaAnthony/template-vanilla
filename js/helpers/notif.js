@@ -1,11 +1,15 @@
 const NOTIFICATION_CONFIG = {
-    maxWidth: '200px',
-    zIndex: 14,
+    containerZIndex: 14,
     duration: 3000,
+    color: {
+        success: 'var(--bs-success)',
+        warning: 'var(--bs-warning)',
+        danger: 'var(--bs-danger)',
+        primary: 'var(--primary)',
+    }
 };
 
 function notify(content, type = 'success', autoclose = true) {
-
     // Container
     const notification = document.createElement('div');
     notification.style.cssText = `
@@ -14,15 +18,15 @@ function notify(content, type = 'success', autoclose = true) {
         position: fixed;
         top: 20px;
         right: 20px;
-        max-width: ${NOTIFICATION_CONFIG.maxWidth};
-        z-index: ${NOTIFICATION_CONFIG.zIndex};
+        max-width: 200px;
+        z-index: ${NOTIFICATION_CONFIG.containerZIndex};
         padding: 10px;
         flex: 1;
         border-radius: 0.5rem;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
         transition: opacity 0.5s;
         color: var(--light);
-        background-color: ${type === 'success' ? 'var(--bs-success)' : type === 'warning' ? 'var(--bs-warning)' : type === 'danger' ? 'var(--bs-danger)' : 'var(--primary)'};
+        background-color: ${NOTIFICATION_CONFIG.color[type]};
     `;
 
     // Text
@@ -30,14 +34,14 @@ function notify(content, type = 'success', autoclose = true) {
     notificationText.textContent = content;
 
     // Close button
-    const closeButton = document.createElement('div');
-    closeButton.innerHTML = '&#215;';
-    closeButton.style.cssText = `
+    const notificationCloseButton = document.createElement('div');
+    notificationCloseButton.innerHTML = '&#215;'; // cross logo
+    notificationCloseButton.style.cssText = `
         cursor: pointer;
         margin-left: 10px;
         border-radius: 25px;
     `;
-    closeButton.addEventListener('click', function () {
+    notificationCloseButton.addEventListener('click', function () {
         notification.style.opacity = 0;
         setTimeout(function () {
             notification.style.display = 'none';
@@ -47,7 +51,7 @@ function notify(content, type = 'success', autoclose = true) {
 
     // Append
     notification.appendChild(notificationText);
-    notification.appendChild(closeButton);
+    notification.appendChild(notificationCloseButton);
 
     // Append to document
     document.body.appendChild(notification);
@@ -62,6 +66,15 @@ function notify(content, type = 'success', autoclose = true) {
             }, 500);
         }, NOTIFICATION_CONFIG.duration);
     }
+}
+
+function clearAllNotifcation() {
+    const notifications = document.querySelectorAll('.notification');
+    notifications.forEach(function (notification) {
+        notification.style.opacity = 0;
+        notification.style.display = 'none';
+        notification.remove();
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
