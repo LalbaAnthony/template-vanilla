@@ -10,8 +10,16 @@ const NOTIFICATION_CONFIG = {
 };
 
 function notify(content, type = 'success', autoclose = true) {
+    
+    const possibleType = ['success', 'warning', 'danger', 'info'];
+    if (possibleType.includes(type) == false) {
+        console.error(`Invalid notification type: ${type}`);
+        return;
+    }
+
     // Container
     const notification = document.createElement('div');
+    notification.setAttribute('id', 'notification');
     notification.style.cssText = `
         opacity: 1;
         display: flex;
@@ -68,19 +76,13 @@ function notify(content, type = 'success', autoclose = true) {
     }
 }
 
-function clearAllNotifcation() {
-    const notifications = document.querySelectorAll('.notification');
-    notifications.forEach(function (notification) {
-        notification.style.opacity = 0;
-        notification.style.display = 'none';
-        notification.remove();
-    });
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    notify("Hello world !", "success", true);
-    // setTimeout(function () {
-    //     notify("Hello world ! 2", "success", true);
-    // }, 500);
-});
+// TODO: make that shit work
+// function clearAllNotifcation() {
+//     const notifications = document.querySelectorAll('.notification');
+//     notifications.forEach(function (notification) {
+//         notification.style.opacity = 0;
+//         notification.style.display = 'none';
+//         notification.remove();
+//     });
+// }
 
