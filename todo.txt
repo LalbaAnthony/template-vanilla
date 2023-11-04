@@ -3,6 +3,7 @@ TODO:
 - [X] Dropdown menu on filter
 - [X] Remplacer les onclick par des addEnventListener
 - [X] Message si pas d'items (+ fill les items den dynamique (?))
+- [X] Improve item (with pills, title, subtitle, img(?), etc)
 - [ ] Blur le reste de l'app quand side panel
     - [ ] Fixer le pb du flou blanc autour du header
 - [ ] Improve filter
@@ -16,5 +17,3 @@ TODO:
         - [X] Ajouter un croix pour pouvoir les fermer
 - [ ] Center AppName on header
 - [ ] Create dialog popup
-- [ ] Improve item (with pills, title, subtitle, img(?), etc)
-      avec https://codepen.io/utilitybend/pen/bGvjLba
