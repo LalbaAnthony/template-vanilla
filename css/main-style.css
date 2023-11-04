@@ -31,6 +31,16 @@ section {
   padding: 0.5rem 1rem;
 }
 
+.pills-list {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: left;
+}
+
+.pills-list li:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+
 .pill {
   background-color: var(--primary);
   color: var(--light);
@@ -38,11 +48,23 @@ section {
   font-size: 12px;
   border-radius: 25px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s  ease;
 }
 
-.pill.hover-effect:hover {
+.hover-effect:hover {
   transform: scale(1.1);
+}
+
+.pill.chocolate {
+  background-color: chocolate;
+}
+
+.pill.teal {
+  background-color: teal;
+}
+
+.pill.brown {
+  background-color: brown;
 }
 
 .sr-only {

@@ -72,25 +72,3 @@
   font-size: 0.8rem;
   font-weight: bold;
 }
-
-.pills-list {
-  padding: 0.5rem;
-  display: flex;
-  align-items: left;
-}
-
-.pills-list>* {
-  margin: 0 5px 0 5px;
-}
-
-.pill.chocolate {
-  background-color: chocolate;
-}
-
-.pill.teal {
-  background-color: teal;
-}
-
-.pill.brown {
-  background-color: brown;
-}
