@@ -16,4 +16,4 @@ TODO:
         - [X] Gerer les conflits side panel / notifs
         - [X] Ajouter un croix pour pouvoir les fermer
 - [ ] Center AppName on header
-- [ ] Create dialog popup
+- [ ] Create fenetre modal (dialog)

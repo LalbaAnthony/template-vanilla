@@ -36,7 +36,8 @@
 
 .item>img {
   object-fit: cover;
-  max-width: 100%
+  max-width: 100%;
+  transition: transform 0.2s ease;
 }
 
 .item-content {

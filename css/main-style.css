@@ -48,7 +48,7 @@ section {
   font-size: 12px;
   border-radius: 25px;
   cursor: pointer;
-  transition: transform 0.2s  ease;
+  transition: transform 0.2s ease;
 }
 
 .hover-effect:hover {
