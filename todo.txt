@@ -10,7 +10,7 @@ TODO:
 - [ ] Créer des notifs
         - [ ] Rajouter la blinde de fonctions pour interagir avec les notifs (clear all, ...)  
         - [ ] Ajouter le fait de pouvoir slide les notifications
-        - [ ] Gérer plusieurs notifs à la fois
+        - [ ] Gérer plusieurs notifs à la fois, decaler tout les autre notif en y de la hauteur d'une notif
         - [ ] Ajout d'une icon sur les notifs
         - [X] Reword tout le code en fragmentant en plein de fonctions 
         - [X] Gerer les conflits side panel / notifs
