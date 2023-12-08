@@ -29,6 +29,17 @@ ol {
   list-style-type: none;
 }
 
+/* Code for Firefox */
+::-moz-selection {
+  color: var(--light);
+  background: var(--primary);
+}
+
+::selection {
+  color: var(--light);
+  background: var(--primary);
+}
+
 body {
   background-color: var(--light);
   font-family: "Roboto", sans-serif;
