@@ -29,6 +29,10 @@ ol {
   list-style-type: none;
 }
 
+address {
+  font-style: normal;
+}
+
 /* Code for Firefox */
 ::-moz-selection {
   color: var(--light);
