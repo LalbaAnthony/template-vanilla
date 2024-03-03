@@ -6,9 +6,9 @@
   --secondary: #ee5011;
   --dark: #000000;
   --light: #ffffff;
-  --bs-success: #28a745;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
 }
 
 /* * {
